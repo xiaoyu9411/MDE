@@ -224,7 +224,7 @@ egamma<-function(data,n,starta,startb,lowa=0,upa=50,lowb=0,upb=1/50){
     
     x<-qgamma(p,shape = bsa, scale = bsb)
     # Calculate density at the quantile
-    FF <- pgamma(q, shape = bsa, scale = bsb)
+    FF <- pgamma(x, shape = bsa, scale = bsb)
     
     # Calculate variance and weights
     cov<-matrix(NA,nrow=length(p),ncol=length(p))
