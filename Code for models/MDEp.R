@@ -220,7 +220,7 @@ egamma<-function(data,n,starta,startb,method="Nelder-Mead"){
     
     x<-qgamma(p,shape = bsa, scale = bsb)
     # Calculate density at the quantile
-    FF <- pgamma(q, shape = bsa, scale = bsb)
+    FF <- pgamma(x, shape = bsa, scale = bsb)
     
     # Calculate variance and weights
     cov<-matrix(NA,nrow=length(p),ncol=length(p))
@@ -493,7 +493,7 @@ egamma<-function(data,n,starta,startb,lowa=1e-3,upa=100,lowb=1e-3,upb=100){
     
     x<-qgamma(p,shape = bsa, scale = bsb)
     # Calculate density at the quantile
-    FF <- pgamma(q, shape = bsa, scale = bsb)
+    FF <- pgamma(x, shape = bsa, scale = bsb)
     
     # Calculate variance and weights
     cov<-matrix(NA,nrow=length(p),ncol=length(p))
