@@ -1,5 +1,6 @@
 
-#Run the get.scenario, set.qe.fit.control, get.mean.sd, and get.num.input first
+#Run the get.scenario, set.qe.fit.control, get.mean.sd, and get.num.input first: These functions are developed by Dr.McGrath
+#The code is avaliable at https://github.com/stmcg/estmeansd
 
 library(metaBLUE)
 
