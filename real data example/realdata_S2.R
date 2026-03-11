@@ -61,10 +61,10 @@ mymeta2<-metagen(TE=mqe,seTE=sdqe/sqrt(n),studlab=Study,data=ds,method.tau="REML
 print(mymeta2)#table 2-QE S2
 
 mymeta3<-metagen(TE=mwqe,seTE=sdwqe/sqrt(n),studlab=Study,data=ds,method.tau="REML")
-summary(mymeta3)#table 2-wQE S2
+print(mymeta3)#table 2-wQE S2
 
 mymeta4<-metagen(TE=mmde,seTE=sdmde/sqrt(n),studlab=Study,data=ds,method.tau="REML")
-summary(mymeta4) #table 2-MDE S2
+print(mymeta4) #table 2-MDE S2
 
 mymeta5<-metagen(TE=Mean,seTE=SE,studlab=Study,data=dstrue,method.tau="REML")
-summary(mymeta5) #table 2-True sample mean/SD
+print(mymeta5) #table 2-True sample mean/SD
