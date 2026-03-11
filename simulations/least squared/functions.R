@@ -2,7 +2,7 @@ library(metafor)
 library(meta)
 library(estmeansd)
 library(pracma)
-library(stat)
+library(stats)
 
 get.scenario <- function(min.val, q1.val, med.val, q3.val, max.val) {
   if (!(missing(min.val) | missing(q1.val) | missing(med.val) | missing(q3.val)
